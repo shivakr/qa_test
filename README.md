@@ -41,24 +41,24 @@ local machines
 error as we dont have the CI setup
 
 
-###Runs all tests by default on chrome
+### Runs all tests by default on chrome
 
 ```
 bundle exec cucumber
 ```
 
-###Runs all tests on firefox 
+### Runs all tests on firefox 
 *Here -p options says using which profile we need to run the tests
 ```
 bundle exec cucumber -p firefox
 ```
 
-###Runs all tests for a specific feature
+### Runs all tests for a specific feature
 ```
 bundle exec cucumber /<feature_folder>/<feature_file>
 ```
 
-###Runs a specific test
+### Runs a specific test
 ```
 bundle exec cucumber /<feature_folder>/<feature_file>:<line_number> ENV=<environment> BROWSER=<browser>
 or
@@ -69,7 +69,7 @@ bundle exec cucumber -p firefox --tags <tag_name>
 * Tags can be used above any scenario for example @test and use in above command to run that specific scenario
 
 ### Test Structure and other details:
-###Features Directory:
+#### Features Directory:
   * Has .feature file where all the user behaviour is written by product team and the tester along with team enhances 
   and the same can be used as reference from developers and across the stakeholders to get to know the scenarios both 
   positive and negative scenarios in plain english language
@@ -83,29 +83,29 @@ bundle exec cucumber -p firefox --tags <tag_name>
     * app_config - All data that needed to start the app, here we have just defined the url from which we will start the 
     app
     
-###lib Directory:
+#### lib Directory:
   * Main folder is pages, where all the pages objects are defined. Meaning, we have all the elements related to one page
    is put into that page for each maintainance in future
   * Any actions we are doing on a particular page is defined as Methods(functions) in that page
   * we use Siteprism to manage the element and locator definition
   
-###Test Data folder
+#### Test Data folder
   * This folder can have all the data related to the tasks that we can create
   * This folder has user-data.json which should be anyone adding the new tasks
   * Any non dev's can use this to manage all dat
   
-###Utils Folder
+#### Utils Folder
   * Used to place all common and user defined libraries to support the automation
   
-###Cucumber.yml 
+#### Cucumber.yml 
   * Here we define all the profiles for different browsers
   * Entry point for the cucumber framework
   * I have defied 2 profile chrome and firefox with default browser as chrome
   
-###Gemfile
+#### Gemfile
   * All the required Lirbaries are listes as gems and can be installed using "bundle install" command
   
-###report.html
+####report.html
   * Test execution report will be provided in html format
   * Any failed tests will have the line it failed and the reason it failed
   * For failed scenarios we will have the screenshots attached, so that we can be sure where it failed even before 
