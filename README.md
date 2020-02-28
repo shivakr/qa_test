@@ -105,7 +105,7 @@ bundle exec cucumber -p firefox --tags <tag_name>
 #### Gemfile
   * All the required Lirbaries are listes as gems and can be installed using "bundle install" command
   
-####report.html
+#### report.html
   * Test execution report will be provided in html format
   * Any failed tests will have the line it failed and the reason it failed
   * For failed scenarios we will have the screenshots attached, so that we can be sure where it failed even before 
