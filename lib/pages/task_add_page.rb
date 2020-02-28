@@ -102,7 +102,6 @@ module Pages
     def enter_the_required_task_details(number_of_tasks=1, list_of_tasks)
       for i in 0..number_of_tasks-1 do
         if i > 0
-          binding.pry
           add_task_button.click
         end
         type_of_task_details= list_of_tasks[i][0]
