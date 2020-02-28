@@ -1,0 +1,24 @@
+defaults: &defaults
+  chrome:
+    name: :chrome
+    capabilities:
+      browser: chrome
+
+  firefox:
+    name: :firefox
+    capabilities:
+      browser: firefox
+
+dev:
+  <<: *defaults
+
+ci:
+  <<: *defaults
+
+
+
+
+
+
+
+

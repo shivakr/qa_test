@@ -1,0 +1,24 @@
+{
+  "DATA": {
+    "CORRECT_TASK_DETAILS": {
+      "TASK_NAME": "TEST TASK NAME",
+      "DESCRIPTION": "Test Description to enter in to the description field of the task name",
+      "PRIORITY": "Medium"
+    },
+    "CORRECT_TASK_DETAILS_PRIORITY_HIGH": {
+      "TASK_NAME": "CORRECT_TASK_DETAILS_PRIORITY_HIGH",
+      "DESCRIPTION": "Test Description to enter in to the description field of the task name",
+      "PRIORITY": "Medium"
+    },
+    "TASK_DETAILS_WITH_OUT_DESCRIPTION": {
+      "TASK_NAME": "TASK_DETAILS_WITH_OUT_DESCRIPTION",
+      "DESCRIPTION":"",
+      "PRIORITY": "Low"
+    },
+    "TASK_DETAILS_WITH_OUT_DESCRIPTION_PRIORITY_LOW": {
+      "TASK_NAME": "TEST TASK NAME",
+      "DESCRIPTION":"",
+      "PRIORITY": "High"
+    }
+  }
+}

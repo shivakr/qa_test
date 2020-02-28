@@ -1,0 +1,7 @@
+<% common = "--tags ~@wip --tags ~@manual" %>
+<% require_features = "-r features" %>
+<% html_report = "--format pretty --format html --out report.html --format json --out report.json" %>
+
+default: 	    BROWSER=chrome          <%= common %> <%= require_features %> <%= html_report %> ENV=dev
+chrome: 	    BROWSER=chrome          <%= common %> <%= require_features %> <%= html_report %> ENV=dev
+firefox: 	    BROWSER=firefox         <%= common %> <%= require_features %> <%= html_report %> ENV=dev

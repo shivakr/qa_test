@@ -1,0 +1,9 @@
+login_invalid_credentials: Authentication failed. Please try again.
+login_empty_field_error: This field is required.
+login_too_many_attempt_error: Due to too many incorrect log in attempts, your account has been locked. Please check your email to unlock it.
+registration_successful_message: Thank you for registering. You will receive an email shortly with confirmation details.
+password_reset_successful_message:  Your password was sent to the provided email address.
+registration_email_already_taken_error: The email address you requested is already taken.
+registration_invalid_email_error: Please enter a valid email address.
+registration_confirm_password_error: Please enter the same value again.
+registration_empty_field_error: This field is required.
